@@ -30,3 +30,5 @@ Got an overview of programming basics, set up the environment for Python develop
 - Python memory model: STACK and HEAP
 - Python’s no-main flexibility
 - Introduction to MVC Architecture with real-world example (Uber)
+
+🔗 [Day_2.py](./Day_2.py)
