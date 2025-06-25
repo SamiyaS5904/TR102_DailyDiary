@@ -18,3 +18,5 @@ TR-102 Training Diary | CSE Pre-final Year Student | Training on Agentic AI at A
 **Key Takeaway:**  
 Got an overview of programming basics, set up the environment for Python development, and learned foundational concepts that will support future Agentic AI tasks.
 
+🔗 [Click here to view the Day 1 Python code](./Day1.py)
+
