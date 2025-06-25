@@ -20,3 +20,13 @@ Got an overview of programming basics, set up the environment for Python develop
 
 🔗 [Click here to view the Day 1 Python code](./Day1.py)
 
+## Day 2 – June 17, 2025
+
+### Topics Covered:
+
+- What is `main` in C++, Java, and Python
+- What is a process and main thread
+- Variable lifecycle: Create, Read, Update, Delete
+- Python memory model: STACK and HEAP
+- Python’s no-main flexibility
+- Introduction to MVC Architecture with real-world example (Uber)
