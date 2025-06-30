@@ -62,7 +62,7 @@ Got an overview of programming basics, set up the environment for Python develop
 
 # Day 5 –  20 June 2025  
 
-**Python Data Structures and Operators ** 
+Python Data Structures and Operators
 
 ### **1. Set in Python**
 
