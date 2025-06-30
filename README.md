@@ -47,7 +47,7 @@ Got an overview of programming basics, set up the environment for Python develop
    - Accessing individual elements
    - Understanding memory (hashcodes and types)
 
-# Day 4 - *Tuples & Lists
+# Day 4 - Tuples & Lists
 
 ## Topics Covered
 
