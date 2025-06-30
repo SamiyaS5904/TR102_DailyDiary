@@ -8,3 +8,4 @@
 
 print("Hii, it's my Day 1 of Industrial Training 102 at Auribises Technologies 🚀")
 print("I installed Python, set it up, and successfully ran my first program today! 🎉")
+
