@@ -47,7 +47,8 @@ Got an overview of programming basics, set up the environment for Python develop
    - Accessing individual elements
    - Understanding memory (hashcodes and types)
 
-# Day 4 - Tuples & Lists
+# Day 4 - 19 June 2025
+**Tuples & Lists**
 
 ## Topics Covered
 
@@ -122,4 +123,47 @@ Python Data Structures and Operators
 - Practiced all categories of Python operators in real-world logic.
 - Reinforced understanding using practical scenarios like travel booking and user conditions.
 
+# Day 6 – 23 June 2025
+**Deep dive into Bitwise Operations, conditional logic structures, and loop-based algorithms.**
+
+## ***Topics Covered***
+
+
+### **1. Bitwise Shift Operations**
+- Learned the usage of `>>` (Right Shift) and `<<` (Left Shift).
+- Used for simulating encryption/decryption through binary-level operations.
+- Explored shift behavior for positive and negative integers.
+- Understood 2’s complement representation and binary manipulation.
+
+
+### **2. Conditional Structures**
+- Implemented decision-making logic using:
+  - Simple `if-else`
+  - Nested `if` blocks
+  - Ladder `if-elif-else` blocks
+- Applied coupon and promo codes with validation:
+  - `NOMNOW150`: Flat discount after threshold
+  - `zomato` and `bingo`: Percentage discount with limits
+- Practiced real-world examples of online billing systems.
+
+
+### **3. Search Algorithms in Lists**
+- Practiced both `while` and `for` loops.
+- Implemented **Linear Search Algorithm**.
+- Used `break`, flags, and condition checking.
+- Practiced dry run with step-wise index matching.
+
+
+### **4. Nested Loops & Pattern Printing**
+- Visualized 2D patterns using nested `for` loops.
+- Printed alternating patterns using Unicode:
+  - White square: `\u25A1`
+  - Black square: `\u25A0`
+- Homework: Print full chessboard using proper loop logic.
+
+## ✅ Assignments / Homework:
+- [ ] Print an 8x8 chessboard with correct alternating pattern.
+- [ ] Try infinite loops using `while` and `for`.
+- [ ] Enhance coupon logic with expiry dates and user categories.
+- [ ] Convert nested coupon conditions into modular functions.
 
