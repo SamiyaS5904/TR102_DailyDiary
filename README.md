@@ -32,3 +32,17 @@ Got an overview of programming basics, set up the environment for Python develop
 - Introduction to MVC Architecture with real-world example (Uber)
 
 🔗 [Day_2.py](./Day_2.py)
+
+# Day 3 -  June 18, 2025
+
+## Topics Covered
+
+1. **Model Explanation**
+2. **Single Value Containers**
+   - Variable creation
+   - Update and delete operations
+   - Reference copying
+3. **Multi-Value Containers (Tuples)**
+   - Creating tuples with different data types
+   - Accessing individual elements
+   - Understanding memory (hashcodes and types)
