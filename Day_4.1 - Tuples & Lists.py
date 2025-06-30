@@ -50,3 +50,4 @@ print('names now:', names, type(names), id(names))
 print('followers remains:', followers, type(followers), id(followers))
 print('names[1]:', names[1], id(names[1]))
 print('followers[1]:', followers[1], id(followers[1]))
+
