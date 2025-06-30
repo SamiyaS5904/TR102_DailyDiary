@@ -1,0 +1,64 @@
+# Day 3: Python Basics
+
+# -----------------------
+# Single Value Containers
+# -----------------------
+
+# Create Statements
+instagram_user_name = 'auribises'
+followers = 300
+tree_age = 300
+
+# Update Statement
+followers = 350
+
+# Read Statements
+print("== Single Value Containers ==")
+print('instagram_user_name:', instagram_user_name, id(instagram_user_name), type(instagram_user_name))
+print('followers:', followers, id(followers), type(followers))
+print('tree_age:', tree_age, id(tree_age), type(tree_age))
+print()
+
+# Reference Copy Operation
+johns_age = 25
+fionnas_age = johns_age
+
+# Delete variables
+del johns_age
+del fionnas_age
+
+# Uncommenting below line will raise an error since variable is deleted
+# print('johns_age:', johns_age, id(johns_age), type(johns_age))
+# print('fionnas_age:', fionnas_age, id(fionnas_age), type(fionnas_age))
+
+# ------------------------
+# Multi Value Containers
+# ------------------------
+
+johns_followers = ('fionna', 'kia', 'jim', 'joe', 'jack')
+ipl_player_scores = 90, 50, 30, 20, 65, 37
+menu = 'dal', 300, 'paneer', 400, 'noodles', 350
+
+print("== Multi Value Containers ==")
+
+print('\njohns_followers')
+print('~~~~~~~~~~~~~~~')
+print(johns_followers)
+print('hashcode:', id(johns_followers))
+print('type:', type(johns_followers))
+
+print('\nipl_player_scores')
+print('~~~~~~~~~~~~~~~')
+print(ipl_player_scores)
+print('hashcode:', id(ipl_player_scores))
+print('type:', type(ipl_player_scores))
+
+print('\nmenu')
+print('~~~~~~~~~~~~~~~')
+print(menu)
+print('hashcode:', id(menu))
+print('type:', type(menu))
+
+# Accessing each element of menu
+for i in range(len(menu)):
+    print(f'menu[{i}]: {menu[i]}, id: {id(menu[i])}, type: {type(menu[i])}')
