@@ -1,5 +1,4 @@
 # Day 5.1 - Set Operations in Python
-
 # Set automatically removes duplicates
 followers = {'john', 'jennie', 'jim', 'jack', 'joe', 'jennie'}
 
