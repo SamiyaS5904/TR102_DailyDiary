@@ -46,3 +46,16 @@ Got an overview of programming basics, set up the environment for Python develop
    - Creating tuples with different data types
    - Accessing individual elements
    - Understanding memory (hashcodes and types)
+
+# Day 4 - *Tuples & Lists
+
+## Topics Covered
+
+1. **Tuples vs Lists**
+   - Tuple immutability
+   - List mutability
+   - Reference copy behavior
+2. **Dictionaries**
+   - Simple key-value storage
+   - Nested dictionaries and lists
+   - Real-world example: Restaurant menu and details
