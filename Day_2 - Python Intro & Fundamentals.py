@@ -24,3 +24,4 @@ del num1
 print('num1 now is:', num1)
 print('type of num1 now is:', type(num1))
 print('num1 hashcode now is:', id(num1))
+
