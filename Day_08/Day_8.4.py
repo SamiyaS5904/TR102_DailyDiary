@@ -3,3 +3,4 @@ def square_of_number(number):
     number = number * number
     print('2. number is: ', number, id(number)) # 100
 number = 10
+
