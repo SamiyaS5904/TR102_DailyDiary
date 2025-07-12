@@ -14,6 +14,7 @@ restaurant_menu = {
     'noodles': 350
 }
 
+
 print("\nMenu using Dictionary")
 print(restaurant_menu, type(restaurant_menu), id(restaurant_menu))
 
@@ -43,3 +44,5 @@ print("\nDetailed Restaurant Info")
 print("Name:", restaurant['name'])
 print("Operating Hours:", restaurant['operating_hours'])
 print("First Menu Item:", restaurant['menu'][0])
+
+
