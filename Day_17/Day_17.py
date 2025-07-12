@@ -1,3 +1,8 @@
+# In Linked List we append the data
+# append -> add at the end
+
+# def add_in_front  ?
+
 from Session14B import Car
 from Session14C import CarList
 
