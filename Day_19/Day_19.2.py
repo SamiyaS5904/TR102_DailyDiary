@@ -1,35 +1,17 @@
-# Creating a dictionary with list, having keys as elements of list
-
-months_list = ['jan', 'feb', 'mar',
-               'apr', 'may', 'june',
-               'july', 'aug', 'sep',
-               'oct', 'nov', 'dec']
-
-college_attendence = {}.fromkeys(months_list, 100)
-
-print('college_attendence')
-print(college_attendence)
-
-college_attendence['jan'] -= 5
-
-print('college_attendence')
-print(college_attendence)
 
 
-print('~~~~~~~~~~~~~~~~~~~~~~~~~~')
+# List of Months
+months_list = ['jan', 'feb', 'mar', 
+              'apr', 'may', 'june', 
+              'july', 'aug', 'sep', 
+              'oct', 'nov', 'dec']
 
-# 10 students -- each students each month attendence by deafult 100
+# How to create a dictionary with list, having keys as elements of list
+college_attendance = {}.fromkeys(months_list, 100)
+print('college_attendance')
+print(college_attendance)
 
-my_data ={
-    205 : 'samiya',
-    208 : 'savreet',
-    220 : 'simran kaur',
-    221 : 'simran',
-}
+college_attendance['jan'] -= 5
 
-keys = list(my_data.keys())
-values = list(my_data.values())
-
-print(keys)
-print(values)
-
+print('college_attendance')
+print(college_attendance)

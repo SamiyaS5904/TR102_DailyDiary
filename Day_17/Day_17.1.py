@@ -10,3 +10,7 @@
     Dequeue  -> delete from head
     Iterate -> head to tail
 """
+"""
+    Assignment: Shopping Cart as Circular Doubly LinkedList
+    Scenario: Amazon eCommerce WebApp
+"""
