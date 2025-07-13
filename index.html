@@ -9,12 +9,6 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Header with Logos -->
-    <header class="logo-bar">
-        <img src="auribises-logo.jpeg" alt="Auribises Logo" class="logo">
-        <img src="gne-logo.png" alt="GNE Logo" class="logo">
-    </header>
-
     <!-- Theme Toggle Button -->
     <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
         <i class="fas fa-moon"></i>
@@ -24,24 +18,844 @@
     <!-- Background Video -->
     <video class="bg-video" autoplay muted loop playsinline>
         <source src="https://cdn.videvo.net/videvo_files/video/free/2019-01/large_watermarked/190301_1_25_11_preview.mp4" type="video/mp4">
+        <source src="https://cdn.videvo.net/videvo_files/video/free/2019-01/large_watermarked/190301_1_25_11_preview.webm" type="video/webm">
     </video>
 
-    <!-- Weekly Diary Section -->
-    <main class="diary">
-        <section class="week">
-            <h2>Week 1 - Explorer</h2>
-            <button class="toggle-log" onclick="toggleLogs('week1-logs')">View Daily Logs</button>
-            <ul id="week1-logs" class="log-list hidden">
-                <li>Day 1: Introduction & Setup</li>
-                <li>Day 2: HTML Basics</li>
-                <li>Day 3: CSS Styling</li>
-                <li>Day 4: JavaScript Intro</li>
-                <li>Day 5: Mini Project</li>
+    <!-- Sticky Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <div class="header-logos">
+                    <div class="header-logo-item">
+                        <img src="attached_assets/gne-logo_1752337851427.png" alt="GNDEC Logo" class="header-logo">
+                    </div>
+                    <div class="header-logo-item">
+                        <img src="attached_assets/auribises-logo_1752337851426.jpeg" alt="Auribises Logo" class="header-logo">
+                    </div>
+                </div>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                <li class="nav-item"><a href="#logs" class="nav-link">Daily Logs</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="#certificates" class="nav-link">Certificates</a></li>
+                <li class="nav-item"><a href="#instructor" class="nav-link">Instructor</a></li>
             </ul>
-        </section>
-    </main>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
 
-    <!-- Scripts -->
+    <!-- Header Section -->
+    <header id="home" class="hero-section">
+        <div class="hero-content">
+            <div class="header-institutions">
+                <div class="institution-left">
+                    <img src="attached_assets/gne-logo_1752337851427.png" alt="GNDEC Logo" class="institution-logo">
+                    <div class="institution-info">
+                        <h3>Guru Nanak Dev Engineering College</h3>
+                        <p>Department of Computer Science & Engineering</p>
+                    </div>
+                </div>
+                <div class="institution-right">
+                    <img src="attached_assets/auribises-logo_1752337851426.jpeg" alt="Auribises Logo" class="institution-logo">
+                    <div class="institution-info">
+                        <h3>Auribises Technologies Pvt. Ltd.</h3>
+                        <p>Training Partner</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero-title slide-in-up">
+                <h1 class="main-title">
+                    <span class="gradient-text">TR-102 Training Diary – Agentic AI Development</span>
+                </h1>
+                <div class="student-info">
+                    <h2 class="student-name">Samiya Sehgal</h2>
+                    <p class="student-details">URN: 2302662 | CSE Branch | Pre-Final Year</p>
+                </div>
+            </div>
+            
+            <div class="hero-cta slide-in-up">
+                <a href="#about" class="cta-button">
+                    <span>Explore My Agentic AI Training Journey</span>
+                    <i class="fas fa-arrow-down"></i>
+                </a>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <div class="scroll-dot"></div>
+        </div>
+    </header>
+
+    <!-- About Training Section -->
+    <section id="about" class="section about-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About My Training</h2>
+                <div class="section-line"></div>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="lead-text">
+                        Welcome to my TR-102 Summer Training documentation! This comprehensive program at 
+                        <strong>Auribises Technologies Pvt. Ltd.</strong> focuses on cutting-edge 
+                        artificial intelligence and modern web development technologies.
+                    </p>
+                    
+                    <div class="training-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-calendar-alt"></i>
+                            <div>
+                                <h4>Duration</h4>
+                                <p>6 Weeks Intensive Training</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Near Rose Garden, Sarabha Nagar, Ludhiana</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-chalkboard-teacher"></i>
+                            <div>
+                                <h4>Training Mode</h4>
+                                <p>Offline Mode</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-robot"></i>
+                            <div>
+                                <h4>Focus Area</h4>
+                                <p>Agentic AI Development</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-visual">
+                    <div class="training-timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h4>Foundation</h4>
+                                <p>Python Programming & Flask Framework</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h4>Database</h4>
+                                <p>MongoDB & REST API Development</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h4>AI/ML</h4>
+                                <p>Large Language Models & Agentic AI</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Skills Acquired</h2>
+                <div class="section-line"></div>
+                <p class="section-subtitle">Technologies and frameworks mastered during the training</p>
+            </div>
+            
+            <div class="skills-grid">
+                <div class="skill-card" data-skill="python">
+                    <div class="skill-icon">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <h3>Python</h3>
+                    <p>Core programming language for AI development</p>
+                    <div class="skill-progress">
+                        <div class="progress-bar" data-progress="90"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-card" data-skill="flask">
+                    <div class="skill-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Flask</h3>
+                    <p>Lightweight web framework for Python</p>
+                    <div class="skill-progress">
+                        <div class="progress-bar" data-progress="85"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-card" data-skill="mongodb">
+                    <div class="skill-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>MongoDB</h3>
+                    <p>NoSQL database for modern applications</p>
+                    <div class="skill-progress">
+                        <div class="progress-bar" data-progress="80"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-card" data-skill="rest">
+                    <div class="skill-icon">
+                        <i class="fas fa-exchange-alt"></i>
+                    </div>
+                    <h3>REST API</h3>
+                    <p>RESTful web services development</p>
+                    <div class="skill-progress">
+                        <div class="progress-bar" data-progress="88"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-card" data-skill="llm">
+                    <div class="skill-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>LLM</h3>
+                    <p>Large Language Models integration</p>
+                    <div class="skill-progress">
+                        <div class="progress-bar" data-progress="75"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-card" data-skill="ai">
+                    <div class="skill-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>Agentic AI</h3>
+                    <p>Autonomous AI agent development</p>
+                    <div class="skill-progress">
+                        <div class="progress-bar" data-progress="82"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Daily Logs Section -->
+    <section id="logs" class="section logs-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Daily Training Logs</h2>
+                <div class="section-line"></div>
+                <p class="section-subtitle">Day-wise documentation of learning progress</p>
+            </div>
+            
+            <div class="logs-content">
+                <div class="logs-info">
+                    <p class="logs-description">
+                        All training activities, code snippets, and learning outcomes are meticulously 
+                        documented in my GitHub repository. Each day's progress is tracked with detailed 
+                        notes and practical implementations.
+                    </p>
+                    
+                    <div class="repo-link">
+                        <a href="https://github.com/SamiyaS5904/TR102_DailyDiary" target="_blank" class="github-button">
+                            <i class="fab fa-github"></i>
+                            <span>View Complete Repository</span>
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="logs-grid">
+                    <div class="week-section">
+                        <h3 class="week-title">Week 1 - Python Fundamentals</h3>
+                        <div class="week-days">
+                            <div class="day-card">
+                                <div class="day-header">
+                                    <span class="day-number">Day 1</span>
+                                    <i class="fab fa-python"></i>
+                                </div>
+                                <h5>Python Basics</h5>
+                                <p>Variables, data types, and basic operations</p>
+                                <a href="https://github.com/SamiyaS5904/TR102_DailyDiary/tree/main/Day1" target="_blank" class="view-code-btn">
+                                    <i class="fas fa-code"></i> View Code
+                                </a>
+                            </div>
+                            
+                            <div class="day-card">
+                                <div class="day-header">
+                                    <span class="day-number">Day 2</span>
+                                    <i class="fas fa-code-branch"></i>
+                                </div>
+                                <h5>Control Flow</h5>
+                                <p>Conditional statements and loops</p>
+                                <a href="https://github.com/SamiyaS5904/TR102_DailyDiary/tree/main/Day2" target="_blank" class="view-code-btn">
+                                    <i class="fas fa-code"></i> View Code
+                                </a>
+                            </div>
+                            
+                            <div class="day-card">
+                                <div class="day-header">
+                                    <span class="day-number">Day 3</span>
+                                    <i class="fas fa-list"></i>
+                                </div>
+                                <h5>Data Structures</h5>
+                                <p>Lists, dictionaries, and sets</p>
+                                <a href="https://github.com/SamiyaS5904/TR102_DailyDiary/tree/main/Day3" target="_blank" class="view-code-btn">
+                                    <i class="fas fa-code"></i> View Code
+                                </a>
+                            </div>
+                            
+                            <div class="day-card">
+                                <div class="day-header">
+                                    <span class="day-number">Day 4</span>
+                                    <i class="fas fa-cogs"></i>
+                                </div>
+                                <h5>Functions & Modules</h5>
+                                <p>Creating reusable code components</p>
+                                <a href="https://github.com/SamiyaS5904/TR102_DailyDiary/tree/main/Day4" target="_blank" class="view-code-btn">
+                                    <i class="fas fa-code"></i> View Code
+                                </a>
+                            </div>
+                            
+                            <div class="day-card">
+                                <div class="day-header">
+                                    <span class="day-number">Day 5</span>
+                                    <i class="fas fa-object-group"></i>
+                                </div>
+                                <h5>OOP Concepts</h5>
+                                <p>Classes, objects, and inheritance</p>
+                                <a href="https://github.com/SamiyaS5904/TR102_DailyDiary/tree/main/Day5" target="_blank" class="view-code-btn">
+                                    <i class="fas fa-code"></i> View Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="week-section">
+                        <h3 class="week-title">Week 2 - Web Development with Flask</h3>
+                        <div class="week-days">
+                            <div class="day-card">
+                                <div class="day-header">
+                                    <span class="day-number">Day 6</span>
+                                    <i class="fas fa-flask"></i>
+                                </div>
+                                <h5>Flask Basics</h5>
+                                <p>Introduction to Flask web framework</p>
+                                <a href="https://github.com/SamiyaS5904/TR102_DailyDiary/tree/main/Day6" target="_blank" class="view-code-btn">
+                                    <i class="fas fa-code"></i> View Code
+                                </a>
+                            </div>
+                            
+                            <div class="day-card">
+                                <div class="day-header">
+                                    <span class="day-number">Day 7</span>
+                                    <i class="fas fa-route"></i>
+                                </div>
+                                <h5>Routing & Templates</h5>
+                                <p>URL routing and Jinja2 templating</p>
+                                <a href="https://github.com/SamiyaS5904/TR102_DailyDiary/tree/main/Day7" target="_blank" class="view-code-btn">
+                                    <i class="fas fa-code"></i> View Code
+                                </a>
+                            </div>
+                            
+                            <div class="day-card">
+                                <div class="day-header">
+                                    <span class="day-number">Day 8</span>
+                                    <i class="fas fa-wpforms"></i>
+                                </div>
+                                <h5>Forms & Validation</h5>
+                                <p>Handling user input and form validation</p>
+                                <a href="https://github.com/SamiyaS5904/TR102_DailyDiary/tree/main/Day8" target="_blank" class="view-code-btn">
+                                    <i class="fas fa-code"></i> View Code
+                                </a>
+                            </div>
+                            
+                            <div class="day-card">
+                                <div class="day-header">
+                                    <span class="day-number">Day 9</span>
+                                    <i class="fas fa-exchange-alt"></i>
+                                </div>
+                                <h5>REST APIs</h5>
+                                <p>Building RESTful web services</p>
+                                <a href="https://github.com/SamiyaS5904/TR102_DailyDiary/tree/main/Day9" target="_blank" class="view-code-btn">
+                                    <i class="fas fa-code"></i> View Code
+                                </a>
+                            </div>
+                            
+                            <div class="day-card">
+                                <div class="day-header">
+                                    <span class="day-number">Day 10</span>
+                                    <i class="fas fa-shield-alt"></i>
+                                </div>
+                                <h5>Authentication</h5>
+                                <p>User authentication and sessions</p>
+                                <a href="https://github.com/SamiyaS5904/TR102_DailyDiary/tree/main/Day10" target="_blank" class="view-code-btn">
+                                    <i class="fas fa-code"></i> View Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="week-section">
+                        <h3 class="week-title">Week 3 - Database Integration</h3>
+                        <div class="week-days">
+                            <div class="day-card">
+                                <div class="day-header">
+                                    <span class="day-number">Day 11</span>
+                                    <i class="fas fa-database"></i>
+                                </div>
+                                <h5>MongoDB Basics</h5>
+                                <p>Introduction to NoSQL databases</p>
+                                <a href="https://github.com/SamiyaS5904/TR102_DailyDiary/tree/main/Day11" target="_blank" class="view-code-btn">
+                                    <i class="fas fa-code"></i> View Code
+                                </a>
+                            </div>
+                            
+                            <div class="day-card">
+                                <div class="day-header">
+                                    <span class="day-number">Day 12</span>
+                                    <i class="fas fa-search"></i>
+                                </div>
+                                <h5>CRUD Operations</h5>
+                                <p>Create, Read, Update, Delete operations</p>
+                                <a href="https://github.com/SamiyaS5904/TR102_DailyDiary/tree/main/Day12" target="_blank" class="view-code-btn">
+                                    <i class="fas fa-code"></i> View Code
+                                </a>
+                            </div>
+                            
+                            <div class="day-card">
+                                <div class="day-header">
+                                    <span class="day-number">Day 13</span>
+                                    <i class="fas fa-project-diagram"></i>
+                                </div>
+                                <h5>Data Modeling</h5>
+                                <p>Designing database schemas</p>
+                                <a href="https://github.com/SamiyaS5904/TR102_DailyDiary/tree/main/Day13" target="_blank" class="view-code-btn">
+                                    <i class="fas fa-code"></i> View Code
+                                </a>
+                            </div>
+                            
+                            <div class="day-card">
+                                <div class="day-header">
+                                    <span class="day-number">Day 14</span>
+                                    <i class="fas fa-chart-bar"></i>
+                                </div>
+                                <h5>Aggregation</h5>
+                                <p>Data aggregation and analysis</p>
+                                <a href="https://github.com/SamiyaS5904/TR102_DailyDiary/tree/main/Day14" target="_blank" class="view-code-btn">
+                                    <i class="fas fa-code"></i> View Code
+                                </a>
+                            </div>
+                            
+                            <div class="day-card">
+                                <div class="day-header">
+                                    <span class="day-number">Day 15</span>
+                                    <i class="fas fa-tachometer-alt"></i>
+                                </div>
+                                <h5>Performance Optimization</h5>
+                                <p>Indexing and query optimization</p>
+                                <a href="https://github.com/SamiyaS5904/TR102_DailyDiary/tree/main/Day15" target="_blank" class="view-code-btn">
+                                    <i class="fas fa-code"></i> View Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="week-section">
+                        <h3 class="week-title">Week 4 - AI/ML Fundamentals</h3>
+                        <div class="week-days">
+                            <div class="day-card in-progress">
+                                <div class="day-header">
+                                    <span class="day-number">Day 16</span>
+                                    <i class="fas fa-brain"></i>
+                                </div>
+                                <h5>Machine Learning Basics</h5>
+                                <p>Introduction to ML concepts</p>
+                                <span class="status-badge in-progress">In Progress</span>
+                            </div>
+                            
+                            <div class="day-card upcoming">
+                                <div class="day-header">
+                                    <span class="day-number">Day 17</span>
+                                    <i class="fas fa-robot"></i>
+                                </div>
+                                <h5>Natural Language Processing</h5>
+                                <p>Text processing and analysis</p>
+                                <span class="status-badge upcoming">Upcoming</span>
+                            </div>
+                            
+                            <div class="day-card upcoming">
+                                <div class="day-header">
+                                    <span class="day-number">Day 18</span>
+                                    <i class="fas fa-comments"></i>
+                                </div>
+                                <h5>Large Language Models</h5>
+                                <p>Understanding LLMs and APIs</p>
+                                <span class="status-badge upcoming">Upcoming</span>
+                            </div>
+                            
+                            <div class="day-card upcoming">
+                                <div class="day-header">
+                                    <span class="day-number">Day 19</span>
+                                    <i class="fas fa-magic"></i>
+                                </div>
+                                <h5>Prompt Engineering</h5>
+                                <p>Crafting effective prompts</p>
+                                <span class="status-badge upcoming">Upcoming</span>
+                            </div>
+                            
+                            <div class="day-card upcoming">
+                                <div class="day-header">
+                                    <span class="day-number">Day 20</span>
+                                    <i class="fas fa-link"></i>
+                                </div>
+                                <h5>API Integration</h5>
+                                <p>Connecting to AI services</p>
+                                <span class="status-badge upcoming">Upcoming</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="week-section">
+                        <h3 class="week-title">Week 5 - Agentic AI Development</h3>
+                        <div class="week-days">
+                            <div class="day-card upcoming">
+                                <div class="day-header">
+                                    <span class="day-number">Day 21</span>
+                                    <i class="fas fa-cogs"></i>
+                                </div>
+                                <h5>Agent Architecture</h5>
+                                <p>Designing AI agent systems</p>
+                                <span class="status-badge upcoming">Upcoming</span>
+                            </div>
+                            
+                            <div class="day-card upcoming">
+                                <div class="day-header">
+                                    <span class="day-number">Day 22</span>
+                                    <i class="fas fa-memory"></i>
+                                </div>
+                                <h5>Memory Systems</h5>
+                                <p>Implementing agent memory</p>
+                                <span class="status-badge upcoming">Upcoming</span>
+                            </div>
+                            
+                            <div class="day-card upcoming">
+                                <div class="day-header">
+                                    <span class="day-number">Day 23</span>
+                                    <i class="fas fa-tools"></i>
+                                </div>
+                                <h5>Tool Integration</h5>
+                                <p>Connecting agents to external tools</p>
+                                <span class="status-badge upcoming">Upcoming</span>
+                            </div>
+                            
+                            <div class="day-card upcoming">
+                                <div class="day-header">
+                                    <span class="day-number">Day 24</span>
+                                    <i class="fas fa-sync"></i>
+                                </div>
+                                <h5>Agent Workflows</h5>
+                                <p>Building complex agent workflows</p>
+                                <span class="status-badge upcoming">Upcoming</span>
+                            </div>
+                            
+                            <div class="day-card upcoming">
+                                <div class="day-header">
+                                    <span class="day-number">Day 25</span>
+                                    <i class="fas fa-vial"></i>
+                                </div>
+                                <h5>Testing & Debugging</h5>
+                                <p>Testing agent behavior</p>
+                                <span class="status-badge upcoming">Upcoming</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="week-section">
+                        <h3 class="week-title">Week 6 - Final Project</h3>
+                        <div class="week-days">
+                            <div class="day-card upcoming">
+                                <div class="day-header">
+                                    <span class="day-number">Day 26</span>
+                                    <i class="fas fa-clipboard-list"></i>
+                                </div>
+                                <h5>Project Planning</h5>
+                                <p>Defining project requirements</p>
+                                <span class="status-badge upcoming">Upcoming</span>
+                            </div>
+                            
+                            <div class="day-card upcoming">
+                                <div class="day-header">
+                                    <span class="day-number">Day 27</span>
+                                    <i class="fas fa-code"></i>
+                                </div>
+                                <h5>Implementation</h5>
+                                <p>Building the AI agent</p>
+                                <span class="status-badge upcoming">Upcoming</span>
+                            </div>
+                            
+                            <div class="day-card upcoming">
+                                <div class="day-header">
+                                    <span class="day-number">Day 28</span>
+                                    <i class="fas fa-bug"></i>
+                                </div>
+                                <h5>Testing & Refinement</h5>
+                                <p>Testing and improving the agent</p>
+                                <span class="status-badge upcoming">Upcoming</span>
+                            </div>
+                            
+                            <div class="day-card upcoming">
+                                <div class="day-header">
+                                    <span class="day-number">Day 29</span>
+                                    <i class="fas fa-file-alt"></i>
+                                </div>
+                                <h5>Documentation</h5>
+                                <p>Creating project documentation</p>
+                                <span class="status-badge upcoming">Upcoming</span>
+                            </div>
+                            
+                            <div class="day-card upcoming">
+                                <div class="day-header">
+                                    <span class="day-number">Day 30</span>
+                                    <i class="fas fa-presentation"></i>
+                                </div>
+                                <h5>Project Presentation</h5>
+                                <p>Final project presentation</p>
+                                <span class="status-badge upcoming">Upcoming</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Training Projects</h2>
+                <div class="section-line"></div>
+                <p class="section-subtitle">Major and mini projects developed during the training</p>
+            </div>
+            
+            <div class="projects-grid">
+                <div class="project-card featured">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <span class="project-status major">Major Project</span>
+                    </div>
+                    <h3>Intelligent AI Agent System</h3>
+                    <p>A comprehensive agentic AI system capable of autonomous task execution, natural language understanding, and intelligent decision-making. Built with Python, Flask, and advanced LLM integration.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Flask</span>
+                        <span class="tech-tag">LLM APIs</span>
+                        <span class="tech-tag">MongoDB</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/SamiyaS5904/AI-Agent-System" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i> View Code
+                        </a>
+                        <a href="#" class="project-link">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <span class="project-status mini">Mini Project</span>
+                    </div>
+                    <h3>Smart Data Management System</h3>
+                    <p>A Flask-based web application for intelligent data storage and retrieval using MongoDB with advanced query capabilities and real-time analytics.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Flask</span>
+                        <span class="tech-tag">MongoDB</span>
+                        <span class="tech-tag">REST API</span>
+                        <span class="tech-tag">JavaScript</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/SamiyaS5904/Smart-Data-Manager" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i> View Code
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <span class="project-status mini">Mini Project</span>
+                    </div>
+                    <h3>NLP Text Analyzer</h3>
+                    <p>A natural language processing tool that performs sentiment analysis, text summarization, and entity recognition using modern ML techniques.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">NLP</span>
+                        <span class="tech-tag">Machine Learning</span>
+                        <span class="tech-tag">API Integration</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/SamiyaS5904/NLP-Text-Analyzer" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i> View Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section id="certificates" class="section certificates-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Training Certificates</h2>
+                <div class="section-line"></div>
+                <p class="section-subtitle">Recognition and achievements during the training period</p>
+            </div>
+            
+            <div class="certificates-content">
+                <div class="certificates-info">
+                    <h3>Certificate Status</h3>
+                    <p>Training completion certificates will be awarded upon successful completion of all modules and final project presentation.</p>
+                    
+                    <div class="certificate-list">
+                        <div class="certificate-item">
+                            <i class="fas fa-award"></i>
+                            <span>Training Acknowledgement Certificate</span>
+                        </div>
+                        <div class="certificate-item">
+                            <i class="fas fa-certificate"></i>
+                            <span>Course Completion Certificate</span>
+                        </div>
+                        <div class="certificate-item">
+                            <i class="fas fa-trophy"></i>
+                            <span>Project Excellence Recognition</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="certificates-preview">
+                    <div class="certificate-placeholder">
+                        <i class="fas fa-file-certificate"></i>
+                        <h4>Certificates Preview</h4>
+                        <p>Certificates will be available here upon training completion</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instructor Section -->
+    <section id="instructor" class="section instructor-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Training Mentor</h2>
+                <div class="section-line"></div>
+                <p class="section-subtitle">Meet the expert guiding this training journey</p>
+            </div>
+            
+            <div class="instructor-content">
+                <div class="instructor-card">
+                    <div class="instructor-avatar">
+                        <img src="https://avatars.githubusercontent.com/u/ishantk?v=4" alt="Mr. Ishant Kumar" class="avatar-img">
+                        <div class="avatar-status"></div>
+                    </div>
+                    <div class="instructor-info">
+                        <h3>📍 Training Mentor: Mr. Ishant Kumar</h3>
+                        <p class="instructor-title">💼 Auribises Technologies Pvt. Ltd.</p>
+                        <div class="training-details">
+                            <p><i class="fas fa-map-marker-alt"></i> Near Rose Garden, Sarabha Nagar, Ludhiana</p>
+                            <p><i class="fas fa-chalkboard-teacher"></i> Mode: Offline Training</p>
+                            <p><i class="fas fa-clock"></i> Duration: 6 Weeks</p>
+                        </div>
+                        <p class="instructor-bio">
+                            Experienced mentor guiding students through advanced AI and 
+                            machine learning concepts. Passionate about developing the next 
+                            generation of technology professionals.
+                        </p>
+                        <div class="instructor-links">
+                            <a href="https://github.com/ishantk" target="_blank" class="social-link">
+                                <i class="fab fa-github"></i>
+                                <span>GitHub</span>
+                            </a>
+                            <a href="https://linkedin.com/in/ishantk" target="_blank" class="social-link">
+                                <i class="fab fa-linkedin"></i>
+                                <span>LinkedIn</span>
+                            </a>
+                            <a href="https://auribises.com" target="_blank" class="company-link">
+                                <i class="fas fa-globe"></i>
+                                <span>Visit Website</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-main">
+                    <h3>Samiya Sehgal</h3>
+                    <p>Computer Science Engineering Student | AI Enthusiast</p>
+                    <div class="footer-social">
+                        <a href="https://github.com/SamiyaS5904" target="_blank" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/samiyasehgal" target="_blank" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="mailto:samiya.sehgal@example.com" class="social-link">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Training</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Training Details</h4>
+                    <p>TR-102 Summer Training</p>
+                    <p>Auribises Technologies</p>
+                    <p>Ludhiana, Punjab</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Samiya Sehgal. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
