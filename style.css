@@ -1634,3 +1634,44 @@ body {
         padding: 1.5rem;
     }
 }
+
+
+/* Header Fixed Logos */
+.header-logos-fixed {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+.header-logo-fixed {
+    height: 60px;
+    width: auto;
+    object-fit: contain;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px var(--shadow-dark);
+}
+
+/* Social Icons */
+.social-icons {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+.social-icons a {
+    color: var(--primary-color);
+    font-size: 1.4rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+.social-icons a:hover {
+    color: var(--accent-color);
+    transform: scale(1.1);
+}
+
+/* Training Date */
+.training-date {
+    color: var(--text-secondary);
+    font-size: 1rem;
+    margin-top: 0.5rem;
+}
