@@ -1675,3 +1675,88 @@ body {
     font-size: 1rem;
     margin-top: 0.5rem;
 }
+
+/* Fixed Header Logos */
+.header-logos-fixed {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+.header-logo-fixed {
+    height: 60px;
+    object-fit: contain;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px var(--shadow-dark);
+}
+
+/* AI Vectors */
+.ai-vectors {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+.ai-vectors img {
+    height: 100px;
+    transition: transform 0.3s ease;
+}
+.ai-vectors img:hover {
+    transform: scale(1.05);
+}
+
+/* Training Date Styling */
+.training-date {
+    color: var(--text-secondary);
+    font-size: 1rem;
+    margin-top: 0.5rem;
+}
+.week-section {
+    background: var(--bg-tertiary);
+    padding: 2rem;
+    border-radius: 16px;
+    border-left: 4px solid var(--primary-color);
+    margin-bottom: 2rem;
+    cursor: pointer;
+  }
+  .week-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  .week-days {
+    display: none;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  .week-days.show {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .day-card {
+    background: var(--bg-primary);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    padding: 1rem;
+    width: 230px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 10px var(--shadow-dark);
+  }
+  .day-card:hover {
+    transform: translateY(-5px);
+  }
+  .view-code-btn {
+    display: inline-block;
+    margin-top: 0.5rem;
+    background: var(--gradient-primary);
+    color: #fff;
+    padding: 0.4rem 1rem;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 0.85rem;
+  }
+  

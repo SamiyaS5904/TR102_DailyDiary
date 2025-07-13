@@ -504,3 +504,7 @@ function initScrollToTop() {
 
 // Initialize scroll to top
 document.addEventListener('DOMContentLoaded', initScrollToTop);
+function toggleWeek(id) {
+    const section = document.getElementById(id);
+    section.classList.toggle('show');
+}
