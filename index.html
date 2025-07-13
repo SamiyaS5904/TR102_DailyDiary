@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TR-102 Daily Diary - Samiya Sehgal | Agentic AI Training</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header with Logos -->
+    <header class="logo-bar">
+        <img src="auribises-logo.jpeg" alt="Auribises Logo" class="logo">
+        <img src="gne-logo.png" alt="GNE Logo" class="logo">
+    </header>
+
+    <!-- Theme Toggle Button -->
+    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+        <i class="fas fa-moon"></i>
+        <i class="fas fa-sun"></i>
+    </button>
+
+    <!-- Background Video -->
+    <video class="bg-video" autoplay muted loop playsinline>
+        <source src="https://cdn.videvo.net/videvo_files/video/free/2019-01/large_watermarked/190301_1_25_11_preview.mp4" type="video/mp4">
+    </video>
+
+    <!-- Weekly Diary Section -->
+    <main class="diary">
+        <section class="week">
+            <h2>Week 1 - Explorer</h2>
+            <button class="toggle-log" onclick="toggleLogs('week1-logs')">View Daily Logs</button>
+            <ul id="week1-logs" class="log-list hidden">
+                <li>Day 1: Introduction & Setup</li>
+                <li>Day 2: HTML Basics</li>
+                <li>Day 3: CSS Styling</li>
+                <li>Day 4: JavaScript Intro</li>
+                <li>Day 5: Mini Project</li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
