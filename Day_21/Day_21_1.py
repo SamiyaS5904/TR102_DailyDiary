@@ -34,6 +34,4 @@ After Activation :
        
 """
 
-import mysql.connector as db
-print('Sucess !!!!')
 

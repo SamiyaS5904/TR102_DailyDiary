@@ -3,3 +3,5 @@ lines = file.readlines()
 
 for kuchbhi in lines:
     print(kuchbhi)
+
+    
