@@ -1,4 +1,4 @@
-# Database Helper class
+# Database Helper class -- THIS IS A GENERAL DATABASE PROGRAM : CAN BE USED EVERYWHERE JUST BY CHANGING DB NAME
 
 # WRITE - INSERT / UPDATE / DELETE  (ALL 3 IT CAN DO)
 
@@ -41,3 +41,4 @@ class DBHelper:
         def close(self):
             self.connection.close()
             print('[DB Helper] DB Connection Closed...')
+

@@ -9,10 +9,10 @@ DOCTOR'S APP (UTILITY CLASS)
 MENU PROJECTION WILL BE HERE
 VIEW + CONTROLLER
 """
-
+# DoctorsApp has a dbhelper --------
 import datetime
-from Day_22 import DBHelper
-
+from Day_22 import DBHelper                     # dbhelper works only with databases 
+from Day_21.Day_21_4 import Patient
 class DoctorsApp:
 
     def __init__(Self):

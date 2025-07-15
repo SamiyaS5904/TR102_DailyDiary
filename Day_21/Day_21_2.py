@@ -46,3 +46,4 @@ print('SQL Query Executed :)')
 # 4. Close connection -> Released the memory resources
 connection.close()
 print('Connection Closed :)')
+
