@@ -1,7 +1,9 @@
 <!-- Typing animation header -->
+<!-- Typing SVG Header -->
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=24&pause=1000&color=00B4D8&center=true&vCenter=true&width=900&lines=TR102+Training+Diary+%7C+Agentic+AI+Training+Program+%F0%9F%93%98;Organised+Learning+%2B+Project+Journey+by+Samiya+Sehgal+%E2%9C%A8" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=24&pause=1000&color=00B4D8&center=true&vCenter=true&width=900&lines=TR-102+Daily+Diary+%7C+Industrial+Training+Documentation+%F0%9F%93%98;Agentic+AI+Training+Program+by+Auribises+Technologies+Pvt.+Ltd.;Mentored+by+Mr.+Ishant+Kumar+%F0%9F%91%A8%E2%80%8D%F0%9F%92%BB" alt="Typing SVG" />
 </p>
+
 
 ---
 
