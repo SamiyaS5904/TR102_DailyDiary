@@ -74,6 +74,17 @@ This repository has been created as per the academic requirement of **TR102 Indu
   <img src="https://github-readme-stats.vercel.app/api?username=SamiyaS5904&show_icons=true&count_private=true&theme=tokyonight" width="47%" />
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=SamiyaS5904&layout=compact&theme=tokyonight" width="47%" />
 </p>
+
+---
+
+## 🤝 Connect & Acknowledgments
+
+- 👩‍💻 **[Samiya Sehgal](https://www.linkedin.com/in/samiya-sehgal-56a030275)** (Trainee)
+- 🏢 **[Auribises Technologies Pvt. Ltd.](https://www.linkedin.com/company/auribises)** (Training Organization)
+- 👨‍🏫 **[Ishant Kumar Sir](https://www.linkedin.com/in/kumarishant)** (Training Mentor)
+
+> 🙏 Special thanks to **Auribises Technologies** and **Ishant Sir** for their guidance and support throughout the training program.
+
 ---
 
 > _“Empowered by learning, inspired by innovation.”_  
