@@ -13,8 +13,7 @@
 > **Year:** Pre-Final Year  
 > **Training Organization:** [Auribises Technologies Pvt. Ltd.](https://www.auribises.com/)  
 > **Training Domain:** Agentic AI  
-> **Training Duration:** June 2024 – August 2024 (8 Weeks)  
-> **Certificate Required:** 4 Weeks *(8-week certificate also requested)*
+> **Training Duration:** June 2024 – August 2024
 
 ---
 
@@ -32,18 +31,18 @@ This repository has been created as per the academic requirement of **TR102 Indu
 |-----------------|-------------|
 | `Daily_Diary/`  | GitHub Pages version of daily diary (HTML, CSS, JS) |
 | `Daily_Tasks/`  | Code snippets, assignments, and AI tool-based tasks done during training |
-| `Project/`      | Final project files (Coming Soon) |
-| `PDFs/`         | Exported PDFs of the diary for college submission (Coming Soon) |
-| `Report/`       | Final PDF training report (To Be Added) |
+| `Project/`      | Final project files  |
+| `PDFs/`         | Exported PDFs of the diary for college submission |
+| `Report/`       | Final PDF training report |
 
 ---
 
 ## 🌐 GitHub Pages (Live Diary View)
 
-🚀 GitHub Pages will be hosted at:  
-📍 `https://SamiyaS5904.github.io/TR102_DailyDiary/` *(Link will be active after repo is public)*
+🚀 GitHub Pages hosted at:  
+📍 `https://SamiyaS5904.github.io/TR102_DailyDiary/` 
 
-> 🧾 It will present a web view of your daily logs in a clean, readable format.
+> 🧾 It presents a web view of my daily logs in a clean, readable format.
 
 ---
 
@@ -75,20 +74,6 @@ This repository has been created as per the academic requirement of **TR102 Indu
   <img src="https://github-readme-stats.vercel.app/api?username=SamiyaS5904&show_icons=true&count_private=true&theme=tokyonight" width="47%" />
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=SamiyaS5904&layout=compact&theme=tokyonight" width="47%" />
 </p>
-
-> 🛠️ **Note:** GitHub stats might appear blank if your repository is private.  
-> You can enable **private contribution visibility** from your GitHub profile settings under:  
-> `Settings → Profile → Contributions → Include private contributions`
-
----
-
-## 📌 Notes
-
-- This repository is currently **private** and will be made public for submission.
-- The **GitHub Pages** view will serve as an official web-based daily diary.
-- **PDFs** of the diary and report will be uploaded once finalized.
-- The full training spanned **8 weeks**, while the college requires a **4-week certificate**. Both are being arranged.
-
 ---
 
 > _“Empowered by learning, inspired by innovation.”_  
