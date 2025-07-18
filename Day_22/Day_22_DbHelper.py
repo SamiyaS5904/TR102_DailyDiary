@@ -2,7 +2,9 @@
 
 # WRITE - INSERT / UPDATE / DELETE  (ALL 3 IT CAN DO)
 
-import mysql.connector as db
+# TO CREATE MYSQL ON ONLINE SERVER, USING AWS --- BUT ITS PAID AFTER 1 YEAR FREE 
+
+import mysql.connector as db          # db can be named kuchbhi
 
 class DBHelper:
 
@@ -10,11 +12,12 @@ class DBHelper:
 
         # 1. Create Connection
         # if we are using database through anyother location, then we get URL, password, host, --- in place of host , add URL, (cloud database configured )
-        connection  = db.connect(
-        user='root',
-        password='Samiya@2025',
-        host='127.0.0.1',           
-        database='mydatabase'
+        self.connection  = db.connect(
+            user='root',
+            password='Samiya@2025',
+            host='127.0.0.1',             
+            # port = '3306', sometimes we need to pass port , default port is 3306
+            database='mydatabase'
 )
         print('DB HELPER CLASS, CONNECTION CREATED .........') 
 

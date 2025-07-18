@@ -1,4 +1,4 @@
-from Day_22_1 import DoctorsApp
+from Day_22__DoctorApp import DoctorsApp
 
 def main():
     app = DoctorsApp()
