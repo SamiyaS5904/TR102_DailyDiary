@@ -1,7 +1,7 @@
 # SHA 265 --> Secure Hash Implementation
 # ENCRYPTION 
 
-from Day_26_1 import MongoDBHelper
+from Daily_Tasks.Day_26_1 import MongoDBHelper
 from Day_26_2 import User
 
 def main():
