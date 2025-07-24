@@ -1,10 +1,9 @@
 """
 WEB APP DEV WITH FLASK 
-
-1. USER AUTHENTICATION MODULE 
-   -> REGISTER A USER (register.html)
-   -> LOGIN A USER (index.html)
-   -> Take the user to the HOME Page upon login, register
+    1.USER AUTHENTICATION MODULE 
+        -> REGISTER A USER (register.html)
+        -> LOGIN A USER (index.html)
+        -> Take the user to the HOME Page upon login, register
 """
 
 import hashlib
@@ -49,7 +48,6 @@ def fetch_user_from_db():
     }
 
     documents = list(db.find(query))
-
     if len(documents) > 0:
         user = documents[0]
         print(user)
