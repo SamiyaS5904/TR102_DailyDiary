@@ -42,3 +42,11 @@ with bmr_tab:
         st.success(f'Hi {name}, your body needs at least {round(bmr)} kcal/day to function at rest.')
     except ValueError:
         st.error("Please enter a valid age to calculate BMR.")
+
+with body_fat_tab:
+    st.subheader('Body Fat Percentage Calculator')
+
+    neck = st.number_input('Neck (in cm)', min_value=0.0)
+    waist = st.number_input('Waist (in cm)', min_value=0.0)
+
+    
