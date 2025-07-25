@@ -1,21 +1,20 @@
-# Patient Object :  name, phone, email, address, gender, age,weight, bp,sugar, temperature, allergies
-
+# Patient Object: name, phone, email, address, gender, age
 class Patient:
 
-    def __init__(self, name, phone, email, address, gender, age,weight, bp,sugar, temperature, allergies, doctor_id):        
+    def __init__(self, name='', phone='', email='', address='', 
+                 gender='', age=0, doctor_id=''):
         self.name = name
         self.phone = phone
-        self.email = address
+        self.email = email
+        self.address = address
         self.gender = gender
         self.age = age
-        self.weight = weight
-        self.bp = bp
-        self.sugar = sugar
-        self.temperature = temperature
-        self.allergies = allergies
         self.doctor_id = doctor_id
-
+        
     def to_document(self):
         return vars(self)
-
-    def show(self):    
+    
+    # now, its not required as we have web interfaces
+    # if you want to print, you can use to_document above
+    def show(self):
+        pass
