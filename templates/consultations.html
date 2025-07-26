@@ -10,8 +10,8 @@
 <div class="container mt-3">
   <div class="mt-4 p-5 bg-primary text-white rounded">
     <h1>Doctors App</h1> 
-    <p>{{total}} Patient(s) in Your Account</p>
-    <p>Welcome {{name}} | {{email}}</p>
+    <p>{{total}} Consultation(s) in Your Account</p>
+    <p>Welcome Dr. {{name}} | {{email}}</p>
   </div>
 
   <div class="container mt-3">
@@ -44,18 +44,21 @@
   <table class="table">
     <thead>
       <tr>
-        <th>Name</th>
-        <th>Phone</th>
-        <th>Email</th>
-        <th>Address</th>
-        <th>Gender</th>
-        <th>Age</th>
-        <th>Actions</th>
+        <th>Weight</th>
+        <th>Height</th>
+        <th>Bp low</th>
+        <th>Bp High</th>
+        <th>Sugar</th>
+        <th>Temperature</th>
+        <th>Cheif complaints</th>
+        <th>Allergies</th>
+        <th>Medicines</th>
+        <th>Follow-up</th>
       </tr>
     </thead>
     <tbody>
 
-    {% for patient in patients %}
+    {% for consultation in consultations %}
 
       <tr>
         <td>{{patient['name']}}</td>

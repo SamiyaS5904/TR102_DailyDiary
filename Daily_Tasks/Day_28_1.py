@@ -1,8 +1,9 @@
 # Patient Object: name, phone, email, address, gender, age
+import datetime
 class Patient:
 
     def __init__(self, name='', phone='', email='', address='', 
-                 gender='', age=0, doctor_id=''):
+                 gender='', age=0, doctor_id='', created_on=''):
         self.name = name
         self.phone = phone
         self.email = email
@@ -10,11 +11,10 @@ class Patient:
         self.gender = gender
         self.age = age
         self.doctor_id = doctor_id
+        self.created_on = created_on
         
     def to_document(self):
         return vars(self)
     
-    # now, its not required as we have web interfaces
-    # if you want to print, you can use to_document above
     def show(self):
         pass
