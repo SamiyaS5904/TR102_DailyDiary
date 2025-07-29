@@ -23,55 +23,26 @@ def register():
 def search_patient_in_db():
     search = request.form['search']
 
-    db = client["Doctor's_App"]
-patients_collection = db.select_collection("Patient")
+    # i in the option ignores the case sensitive --- it is used for names or otheres when case sensitivity is not there
 
-# 2. Get search input
-search_type = input("Search by 'name' or 'phone': ").strip().lower()
-search_value = input("Enter the value to search: ").strip()
+    query = {
+    '$or': [
+        {'phone': {'$regex': search, '$options': 'i'}},
+        {'name': {'$regex': search, '$options': 'i'}},
+        {'email': {'$regex': search, '$options': 'i'}}
+    ],
+    'doctor_id': session['user_id']
+}     # this will help to get only those patinets who belong to current logged in doctor
 
-# 3. Build query
-query = {}
+    db.select_db(collection='Patient')
+    documents = db.fetch(query)
 
-if search_type == "phone":
-    query = {"phone": search_value}
+    if len(documents) > 0:
+        return render_template('patients.html',name = session['name'], email = session['email'], total = len(documents),patients = documents)
 
-elif search_type == "name":
-    # Case-insensitive partial match using regex
-    query = {"name": {"$regex": search_value, "$options": "i"}}
-
-else:
-    print("Invalid search type. Choose 'name' or 'phone'.")
-    exit()
-
-# 4. Execute query
-results = patients_collection.find(query)
-
-# 5. Display results
-found = False
-for patient in results:
-    found = True
-    print("---- Patient Found ----")
-    print(f"Name: {patient.get('name')}")
-    print(f"Phone: {patient.get('phone')}")
-    print(f"Other Info: {patient}")  # can customize what to show
-
-if not found:
-    print("No matching patient found.")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    else:
+        return render_template('error.html')
+        
 
 @web_app.route('/home')
 def home():
