@@ -3,6 +3,9 @@
     Session is used to save the data whenever you need it across the entire application
     The Session Object will be accessible anywhere in the Flask Python Code
 """
+
+# Made using functional programming (not OOP's)
+
 from flask import *
 from Day_27_2 import User
 from Day_28_1 import Patient

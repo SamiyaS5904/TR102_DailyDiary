@@ -14,7 +14,7 @@ from bson.objectid import ObjectId
 
 web_app = Flask('Doctors App')
 db = MongoDBHelper()
-db.select_db(db_name='gw2025', collection='users')
+db.select_db(db_name="Doctor's_App", collection='users')
 
 # View
 # HW:Validation of the Form: 
