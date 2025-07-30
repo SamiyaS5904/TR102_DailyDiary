@@ -19,44 +19,58 @@ For an agent :
 
         -> MODEL:
                 Dictionary (Agentic AI with Python)                         
+message = {
+    'role': 'user',
+    'content': 'what is python'
+    }
 
+    message = {
+        'role': 'agent',
+        'content': 'its a programming language'
+    }
 """
 
 import streamlit as st
 st.set_page_config(page_title='Chat UI')
 st.title('Chat UI Demo')
+st.subheader('Ask a Question and i will help you with answer')
 
-st.subheader('Ask a question, i will help you with answer')
-
-# if you have to give question answers in dictionary (question will be key , ans will be value)
-
-
-# Here the question bank is static it cannot Shrink or Grow
-# If you want dyanamic -- > use MongoDB
-
+# Static QA -> I have written them in my program and it cannot grow or shrink
+# Dynamic QA -> MongoDB
 question_bank = {
-    'what is python' : 'it is a programming language',
-    'can i build an ai agent' : 'yes you can using Python, OpenAI, CrewAI and many more',
-    'what is streamit' : 'it is a UI Library'
-} 
-
-message = {
-    'role':'User',
-    'content': 'what is python',
+    'what is python': 'its a programming language',
+    'what is streamlit': 'its a UI library for modern UI development in python',
+    'can i build AI Agent': 'Yes, you can use Python, OpenAI, CrewAI and many more'
 }
-
-message = {
-    'role':'Agent',
-    'content': 'what is python',
-}
-
 
 # Create an empty list inside the session state of streamlit
-# Session State is object's Reference which will store data temporarily
-
-
-if 'messages' not in session_state:
+# Session State is an Object's Reference, which will store the data temporarily
+if 'messages' not in st.session_state:
     st.session_state.messages = []
 
-    
+user_input = st.chat_input('Type Your Question. Enter is Send..')
+if user_input: # user_input if not None
+    # st.markdown(user_input)
+    message = {
+        'role': 'user',
+        'content': user_input
+    }
+    st.session_state.messages.append(message)
 
+    if user_input in question_bank:
+        message = {
+            'role': 'ai',
+            'content': question_bank[user_input]
+        }
+        st.session_state.messages.append(message)
+    else:
+        message = {
+            'role': 'ai',
+            'content': 'Sorry, I cannot answer this question'
+        }
+        st.session_state.messages.append(message)
+
+
+for message in st.session_state.messages:
+    with st.chat_message(message['role']):
+        st.markdown(message['content'])
