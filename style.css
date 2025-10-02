@@ -551,6 +551,19 @@ strong, b {
 .instructor-info-formal h3 { color: var(--primary-color); margin: 0 0 5px 0; font-size: 1.5rem; }
 .instructor-title { font-style: italic; color: var(--secondary-color); margin-bottom: 15px; }
 
+/* Add this new CSS rule to your style.css file */
+.instructor-links {
+    /* Ensures the links display side-by-side with space between them */
+    display: flex;
+    gap: 15px; /* Adjust this value (e.g., 10px, 15px) for desired space */
+    margin-top: 15px;
+}
+
+/* Also, make sure the individual links don't have excessive default margin */
+.instructor-links a {
+    margin: 0; 
+}
+
 .footer-formal {
     padding: 20px 0;
     background-color: var(--card-background);
