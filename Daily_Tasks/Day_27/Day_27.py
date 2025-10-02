@@ -8,7 +8,7 @@ WEB APP DEV WITH FLASK
 
 import hashlib
 from flask import Flask, render_template, request
-from Day_26_1 import MongoDBHelper
+from Daily_Tasks.Day_26.Day_26_1 import MongoDBHelper
 from Day_27_2 import User
 
 # Flask app
