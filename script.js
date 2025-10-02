@@ -25,7 +25,7 @@ function initThemeToggle() {
     const themeToggle = document.getElementById('theme-toggle');
     const body = document.body;
     
-    // Check for saved theme preference or default to 'light'
+    // Check for saved theme preference or DEFAULT TO 'light'
     const savedTheme = localStorage.getItem('theme') || 'light';
     if (savedTheme === 'dark') {
         body.classList.add('dark-theme');
@@ -46,7 +46,7 @@ function initThemeToggle() {
 }
 
 // ----------------------------------------------------------------------
-// 2. SIDEBAR COLLAPSIBLE LOGIC (NEW REQUEST)
+// 2. SIDEBAR COLLAPSIBLE LOGIC 
 // ----------------------------------------------------------------------
 
 function initSidebarCollapsible() {
@@ -165,7 +165,7 @@ function initAnimations(contentArea) {
     }, observerOptions);
     
     const animateElements = document.querySelectorAll(
-        '.week-card-formal, .project-card-formal, .timeline-item, .highlight-item, .formal-mentor-card, .skill-card-formal'
+        '.week-card-formal, .project-card-formal, .timeline-item, .highlight-item, .formal-mentor-card, .skill-card-formal, .certificate-card'
     );
     
     animateElements.forEach(el => {
@@ -173,10 +173,8 @@ function initAnimations(contentArea) {
     });
 }
 
-// Skill Bar Animations (Triggered by Intersection Observer on the #content area)
+// Skill Bar Animations (Placeholder retained for structure)
 function initSkillBars(contentArea) {
-    // Note: Since we are not using progress bars, this function is mostly a placeholder 
-    // but retained for structure if you add progress bars later.
     const skillCards = document.querySelectorAll('.skill-card'); 
     
     const skillObserver = new IntersectionObserver((entries) => {
