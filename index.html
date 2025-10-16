@@ -10,7 +10,7 @@
 </head>
 <body>
 
-    <div class="main-wrapper">
+    <div class="main-wrapper" style="display: block;"> 
 
         <nav id="sidebar" class="sidebar-nav sidebar-collapsed">
             <div class="sidebar-header">
@@ -167,93 +167,90 @@
                         <p class="section-subtitle">Weekly summary of tasks completed, topics mastered, and links to detailed reports.</p>
                     </div>
                     
-                    <h2 class="TrainingLogs">(H2) Training Logs</h2>
-<p class="TrainingLogs_p">Detailed summary of tasks completed, topics mastered, and links to detailed reports.</p>
+                    <h3 class="week-title">Week 1: Python Core & OOP</h3><p><a href="pdfs/WEEK_1.pdf" target="_blank">View Report</a></p>
+                    <h3 class="week-title">Week 2: Flask Web Framework</h3><p><a href="pdfs/WEEK_2.pdf" target="_blank">View Report</a></p>
+                    <h3 class="week-title">Week 3: Database (MongoDB & MySQL)</h3><p><a href="pdfs/WEEK_3.pdf" target="_blank">View Report</a></p>
+                    <h3 class="week-title">Week 4: Flask REST API</h3><p><a href="pdfs/WEEK_4.pdf" target="_blank">View Report</a></p>
 
-<h3 class="week-title">Week 1: Python Core & OOP</h3><p><a href="pdfs/WEEK_1.pdf" target="_blank">link to week1 pdf</a></p>
-<h3 class="week-title">Week 2: Flask Web Framework</h3><p><a href="pdfs/WEEK_2.pdf" target="_blank">link to week2 pdf</a></p>
-<h3 class="week-title">Week 3: Database (MongoDB & MySQL)</h3><p><a href="pdfs/WEEK_3.pdf" target="_blank">link to week3 pdf</a></p>
-<h3 class="week-title">Week 4: Flask REST API</h3><p><a href="pdfs/WEEK_4.pdf" target="_blank">link to week4 pdf</a></p>
-
-<h3 class="week-title">Week 5: OpenAI API & Identity</h3><p><a href="pdfs/WEEK_5.pdf" target="_blank">link to week5 pdf</a></p>
-<h3 class="week-title">Week 6: CREW-AI Framework</h3><p><a href="pdfs/WEEK_6.pdf" target="_blank">link to week6 pdf</a></p>
-<h3 class="week-title">Week 7: Major Project Implementation</h3><p><a href="pdfs/WEEK_7.pdf" target="_blank">link to week7 pdf</a></p>
-<h3 class="week-title">Week 8: Project Finalization</h3><p><a href="pdfs/WEEK_8.pdf" target="_blank">link to week8 pdf</a></p>
+                    <h3 class="week-title">Week 5: OpenAI API & Identity</h3><p><a href="pdfs/WEEK_5.pdf" target="_blank">View Report</a></p>
+                    <h3 class="week-title">Week 6: CREW-AI Framework</h3><p><a href="pdfs/WEEK_6.pdf" target="_blank">View Report</a></p>
+                    <h3 class="week-title">Week 7: Major Project Implementation</h3><p><a href="pdfs/WEEK_7.pdf" target="_blank">View Report</a></p>
+                    <h3 class="week-title">Week 8: Project Finalization</h3><p><a href="pdfs/WEEK_8.pdf" target="_blank">View Report</a></p>
+                    
+                    <div class="repo-link text-center mt-5">
+                        <a href="https://github.com/SamiyaS5904/TR102_DailyDiary" target="_blank" class="github-button formal-button">
+                            <i class="fab fa-github"></i>
+                            <span>View All Detailed Daily Logs on GitHub Repository</span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="projects" class="section standard-section">
+                <div class="container">
+                    <div class="section-header">
+                        <h2 class="section-title">Major and Mini Projects</h2>
+                        <div class="section-line"></div>
+                        <p class="section-subtitle">Practical applications demonstrating mastery of core technologies.</p>
+                    </div>
+                    
+                    <div class="projects-asymmetrical-grid">
                         
-                        <div class="repo-link text-center mt-5">
-                            <a href="https://github.com/SamiyaS5904/TR102_DailyDiary" target="_blank" class="github-button formal-button">
-                                <i class="fab fa-github"></i>
-                                <span>View All Detailed Daily Logs on GitHub Repository</span>
-                            </a>
+                        <div class="major-project-column">
+                            <h3 class="column-heading">Major Project</h3>
+                            <div class="project-card-formal featured-major" data-project-id="skillsync">
+                                <div class="project-header">
+                                    <i class="fas fa-sitemap project-icon"></i>
+                                    <span class="project-status major">Capstone Project</span>
+                                </div>
+                                <h3>SkillSync: AI Career Roadmap Generator</h3>
+                                <p>Autonomous <strong>CrewAI</strong> system utilizing large language models to generate personalized learning paths and identify <strong>skill gaps</strong> for users. This project demonstrates complex multi-agent cooperation and dynamic tool utilization.</p>
+                                <div class="project-tech-list">
+                                    <span class="tech-tag">CrewAI</span><span class="tech-tag">OpenAI API</span><span class="tech-tag">Flask</span><span class="tech-tag">REST API</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="https://github.com/SamiyaS5904/SkillSync" target="_blank" class="project-link formal-button">View Repository</a>
+                                    <a href="#" target="_blank" class="project-link formal-button secondary">Live Demo</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mini-projects-column">
+                            <h3 class="column-heading">Mini Projects</h3>
+                            
+                            <div class="project-card-formal" data-project-id="vehicle-comparator">
+                                <div class="project-header">
+                                    <i class="fas fa-car project-icon"></i>
+                                    <span class="project-status mini">Mini Project</span>
+                                </div>
+                                <h4>AutoInsight_AI</h4>
+                                <p>A <strong>Streamlit</strong>-based AI agent performing data-driven comparisons between two vehicle models using the <strong>OpenSearch API</strong>.</p>
+                                <div class="project-tech-list-compact">
+                                    <span class="tech-tag">Streamlit</span><span class="tech-tag">OpenAI</span><span class="tech-tag">OpenSearch</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="https://github.com/SamiyaS5904/AutoInsight_AI" target="_blank" class="project-link formal-button small-button">Repository</a>
+                                </div>
+                            </div>
+                            
+                            <div class="project-card-formal" data-project-id="medicos">
+                                <div class="project-header">
+                                    <i class="fas fa-hospital-alt project-icon"></i>
+                                    <span class="project-status mini">Mini Project</span>
+                                </div>
+                                <h4>Medicore: Hospital Management CRUD App</h4>
+                                <p>A secure <strong>Flask-backend</strong> application enabling robust <strong>CRUD functionalities</strong> using <strong>MySQL</strong> database integration.</p>
+                                <div class="project-tech-list-compact">
+                                    <span class="tech-tag">Flask</span><span class="tech-tag">MySQL</span><span class="tech-tag">REST API</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="https://github.com/SamiyaS5904/MediCore" target="_blank" class="project-link formal-button small-button">Repository</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
-<section id="projects" class="section standard-section">
-    <div class="container">
-        <div class="section-header">
-            <h2 class="section-title">Major and Mini Projects</h2>
-            <div class="section-line"></div>
-            <p class="section-subtitle">Practical applications demonstrating mastery of core technologies.</p>
-        </div>
-        
-        <div class="projects-asymmetrical-grid">
-            
-            <div class="major-project-column">
-                <h3 class="column-heading">Major Project</h3>
-                <div class="project-card-formal featured-major" data-project-id="skillsync">
-                    <div class="project-header">
-                        <i class="fas fa-sitemap project-icon"></i>
-                        <span class="project-status major">Capstone Project</span>
-                    </div>
-                    <h3>SkillSync: AI Career Roadmap Generator</h3>
-                    <p>Autonomous <strong>CrewAI</strong> system utilizing large language models to generate personalized learning paths and identify <strong>skill gaps</strong> for users. This project demonstrates complex multi-agent cooperation and dynamic tool utilization.</p>
-                    <div class="project-tech-list">
-                        <span class="tech-tag">CrewAI</span><span class="tech-tag">OpenAI API</span><span class="tech-tag">Flask</span><span class="tech-tag">REST API</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/SamiyaS5904/SkillSync" target="_blank" class="project-link formal-button">View Repository</a>
-                        <a href="#" target="_blank" class="project-link formal-button secondary">Live Demo</a>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="mini-projects-column">
-                <h3 class="column-heading">Mini Projects</h3>
-                
-                <div class="project-card-formal" data-project-id="vehicle-comparator">
-                    <div class="project-header">
-                        <i class="fas fa-car project-icon"></i>
-                        <span class="project-status mini">Mini Project</span>
-                    </div>
-                    <h4>AutoInsight_AI</h4>
-                    <p>A <strong>Streamlit</strong>-based AI agent performing data-driven comparisons between two vehicle models using the <strong>OpenSearch API</strong>.</p>
-                    <div class="project-tech-list-compact">
-                        <span class="tech-tag">Streamlit</span><span class="tech-tag">OpenAI</span><span class="tech-tag">OpenSearch</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/SamiyaS5904/AutoInsight_AI" target="_blank" class="project-link formal-button small-button">Repository</a>
-                    </div>
-                </div>
-                
-                <div class="project-card-formal" data-project-id="medicos">
-                    <div class="project-header">
-                        <i class="fas fa-hospital-alt project-icon"></i>
-                        <span class="project-status mini">Mini Project</span>
-                    </div>
-                    <h4>Medicore: Hospital Management CRUD App</h4>
-                    <p>A secure <strong>Flask-backend</strong> application enabling robust <strong>CRUD functionalities</strong> using <strong>MySQL</strong> database integration.</p>
-                    <div class="project-tech-list-compact">
-                        <span class="tech-tag">Flask</span><span class="tech-tag">MySQL</span><span class="tech-tag">REST API</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/SamiyaS5904/MediCore" target="_blank" class="project-link formal-button small-button">Repository</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
 
             <section id="certificates" class="section standard-section">
                 <div class="container">
